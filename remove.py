@@ -1,14 +1,20 @@
-# Biblioteca que permite utilizar as funcionalidades do sistema operacional
-import os
+import os, re
 
-# Caminho da pasta que terá os arquivos renomeados
-folder = r"Z:\Almoxarifado\01-Imagens e Vídeos\2014\20-05-2014"
-# Entra no diretório descrito acima
-os.chdir(folder)
+folder =  r'C:\Users\ryan.pereira\Desktop\Imagens'
+count = 0
 
-# Laço que vai percorrer todos os arquivos dentro da pasta
-for file_name in os.listdir():
-  # Separa o nome do arquivo da extensão
-  f_name, f_ext = (os.path.splitext(file_name))
-  if (len(f_name.split(" ")) > 1):
-    os.remove(file_name)
+for path, directories, files in os.walk(folder):
+  print(
+    f'\npath: {path}'
+    f'\ndirectory: {directories}'
+    f'\nfiles: {files}'
+  )
+
+  for file in files:
+    name, extension = os.path.splitext(file)
+
+    if re.search('(Large)', name):
+      os.remove(os.path.join(path, file))
+      print(f'File {file} removed')
+      count += 1
+print(f'Total: {count}')
