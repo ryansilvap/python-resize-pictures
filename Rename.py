@@ -14,4 +14,4 @@ def rename_resized_file (path, file, name, extension):
       print(f'Skipping rename: {renamed_path} already exists!')
     else:
       os.rename(file_path, renamed_path)
-      print(f' Renamed {file} -> {new_name}')
+      print(f'Renamed {file} -> {new_name}')

@@ -10,7 +10,7 @@ def resize_picture (path, file, new_name):
         image_width = image.width
         image_height = image.height
 
-        image_resized = image.resize((image_width, image_height), PIL.Image.NEARSET)
+        image_resized = image.resize((image_width, image_height), PIL.Image.NEAREST)
         image_resized.save(new_file_path)
         shutil.copystat(file_path, new_file_path)
         print(f'Resized: {file} -> {new_name}')
