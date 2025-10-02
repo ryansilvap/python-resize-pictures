@@ -13,7 +13,7 @@ The available tool did the compression well, but generated a second file with an
 I built the initial script **from scratch**, applying only what I knew at the time. The focus was on **making it work**, even if the structure was simple and not fully optimized.  
 
 ### 🔄 Refactored version (with best practices)  
-Later, I reviewed the code and refactored it with **best practices**, such as:  
+Later, I reviewed the code and refactored it with best practices, supported by AI-assisted feedback to refine structure and maintainability. The improvements included:
 - Centralized configuration function  
 - Logging system (console + `.log` file)  
 - Error handling with `try/except`  
@@ -44,7 +44,7 @@ A ferramenta disponível realizava bem a compactação, mas gerava um segundo ar
 Desenvolvi o script inicial **do zero**, aplicando apenas o que eu sabia naquele momento. O foco foi **fazer funcionar**, mesmo que a estrutura ainda fosse simples e sem otimizações.  
 
 ### 🔄 Versão refatorada (com boas práticas)  
-Posteriormente, revisei o código e o refatorei aplicando **boas práticas**, como:  
+Posteriormente, revisei o código e o refatorei aplicando boas práticas, com o apoio de feedbacks de IA para refinar a estrutura e a manutenibilidade. Entre as melhorias, destaco:
 - Função central de configuração no início do programa  
 - Sistema de logs (console + arquivo `.log`)  
 - Tratamento de erros com `try/except`  
