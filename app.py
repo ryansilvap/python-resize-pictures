@@ -19,7 +19,7 @@ from typing import List, Dict, Tuple
 
 class Config:
     """Configurações centralizadas do sistema"""
-    FOLDER_PATH = r'Z:\Segurança'
+    FOLDER_PATH = r'YOUR PATH HERE'
     MIN_FILE_SIZE_KB = 2000  # Processar apenas arquivos > 2MB
     QUALITY = 85  # Qualidade JPEG (0-100)
     MAX_DIMENSION = 1920  # Redimensionar se maior que isso
@@ -48,7 +48,7 @@ class Config:
     </head>
     <body>
         <div class="header">
-            <h1>MINASLIGAS S.A.</h1>
+            <h1>YOUR COMPANY HERE</h1>
             <h2>Relatório de Compactação de Imagens</h2>
         </div>
 
